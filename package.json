@@ -4,17 +4,22 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "worker:dev": "tsx watch src/worker/index.js",
     "build": "next build",
     "start": "next start",
     "lint": "biome check",
     "format": "biome format --write"
   },
   "dependencies": {
+    "dotenv": "^17.2.3",
     "next": "16.0.8",
+    "pg-boss": "^12.5.2",
+    "pino": "^10.1.0",
     "react": "19.2.1",
     "react-dom": "19.2.1"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.2.0"
+    "@biomejs/biome": "2.2.0",
+    "tsx": "^4.21.0"
   }
 }
