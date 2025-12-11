@@ -1,6 +1,6 @@
 import { PgBoss } from 'pg-boss'
 
-const boss = new PgBoss(process.env.DATABASE_URL)
+const boss = new PgBoss(process.env.QUEUE_DATABASE_URL)
 // Singleton pattern pour éviter de multiples connexions en dev
 let started = false
 
