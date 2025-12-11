@@ -554,7 +554,7 @@ pg-types@2.2.0:
     postgres-date "~1.0.4"
     postgres-interval "^1.1.0"
 
-pg@^8.16.3:
+pg@^8.15.6, pg@^8.16.3:
   version "8.16.3"
   resolved "https://registry.yarnpkg.com/pg/-/pg-8.16.3.tgz#160741d0b44fdf64680e45374b06d632e86c99fd"
   integrity sha512-enxc1h0jA/aq5oSDMvqyW3q89ra6XIIDZgCX9vkMrnz5DFTw/Ny3Li2lFQ+pt3L6MCgm/5o2o8HW9hiJji+xvw==
@@ -692,6 +692,13 @@ serialize-error@^12.0.0:
   integrity sha512-ZYkZLAvKTKQXWuh5XpBw7CdbSzagarX39WyZ2H07CDLC5/KfsRGlIXV8d4+tfqX1M7916mRqR1QfNHSij+c9Pw==
   dependencies:
     type-fest "^4.31.0"
+
+serverless-postgres@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/serverless-postgres/-/serverless-postgres-2.1.2.tgz#04800625c99556211af8db21ee1473255de44eba"
+  integrity sha512-ykDrJ0eyp33/jEEXpSif1Tm8D6NeUPHQucghgVI240Vp5HwdpVLNxfJsUoHEbCrpdOWxxSzES4azZrIW+RAdPA==
+  dependencies:
+    pg "^8.15.6"
 
 sharp@^0.34.4:
   version "0.34.5"
