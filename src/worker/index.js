@@ -20,6 +20,8 @@ async function bootstrap() {
   await boss.start()
   logger.info('✅ PgBoss connecté et démarré.')
 
+  logger.info('TEST', process.env.TEST)
+
   const queue = 'send-email'
   await boss.createQueue(queue)
 

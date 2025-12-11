@@ -19,7 +19,7 @@ export async function sendEmailJob(email, body) {
 
 const GET = async () => {
   const result = await sendEmailJob('Test', 'message')
-  return Response.json({ data: 'OK', data: result })
+  return Response.json({ data: 'OK', env: process.env.TEST, data: result })
 }
 
 export {
