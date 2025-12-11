@@ -1,5 +1,7 @@
-const pg = require('serverless-postgres')
+const spg = require('serverless-postgres')
 
-const client = new pg({ connectionString: process.env.DATABASE_URL })
+const client = new spg({ 
+  connectionString: `${process.env.DATABASE_URL}&uselibpqcompat=true`
+})
 
 export default client
